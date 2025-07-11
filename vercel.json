@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "store",
+  "name": "notes-app",
   "builds": [
     {
       "src": "backend/src/server.js",
@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/dist/$1"
+      "dest": "frontend/$1"
     }
   ],
   "env": {
