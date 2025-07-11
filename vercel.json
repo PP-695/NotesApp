@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "notes-app",
+  "functions": {
+    "backend/src/server.js": {
+      "runtime": "@vercel/node@18"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "backend/src/server.js"
+    }
+  ],
+  "outputDirectory": "frontend/dist"
+}
